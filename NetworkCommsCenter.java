@@ -29,7 +29,7 @@ class NetworkCommsCenter
   // --- Methods ---
   public void initializeNetworkCommsCenter(int numPaths)
   {
-    // For each path (I'm assuming it uses numPaths)
+    // For each path in numPaths
     for(int i = 0; i < numPaths; i++)
     {
       // create a new Path and add the path to the pathAvailableList ArrayList
@@ -243,8 +243,6 @@ class NetworkCommsCenter
   
   
       // I'm separating out these foreach loops because my brain is a coke slushie from Burger King left in the car for 15 days
-      // I've been coding for hours already I am le tired
-      // Yknow now that I think about it I haven't had burger king in like 20 years...wonder if it's still good...
       for (Message m : processedMessages)
       {
         if (m instanceof SmallMessage)
@@ -294,7 +292,7 @@ class NetworkCommsCenter
       writer.println("MESSAGE ID / PRIORITY / PATH ID / LENGTH / CREATION TIME / WAIT TIME / START TRANSMIT TIME / TRANS DURATION / TOTAL TIME");
   
       // iterate thru array
-      // Formatting wonky, not super readable but legible perhaps
+      // Formatting is pretty bad but I tried
       while(iterator.hasNext())
       {
         // MESSAGE ID / PRIORITY / PATH ID / LENGTH / CREATION TIME / WAIT TIME / START TRANSMIT TIME / TRANS DURATION / TOTAL TIME
