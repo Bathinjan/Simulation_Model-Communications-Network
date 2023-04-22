@@ -3,7 +3,7 @@ import java.util.*;
 abstract class Message
 {
   // --- Instance variables --- 
-  static int messageIDCounter = 0; // doesn't make sense to make this private based on specifications
+  static int messageIDCounter = 0;
   private int priority;
   private int messageCreationTime;
   private int startTransmitTime;
